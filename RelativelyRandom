@@ -1,0 +1,24 @@
+import random
+import math
+
+# Step  2: Generate two random numbers
+num1 = random.randint(1,  100)
+num2 = random.randint(1,  100)
+
+# Step  3: Divide num1 by num2
+result = num1 / num2
+
+# Step  4: Calculate the square root of the result
+sqrt_result = math.sqrt(result)
+
+# Step  5: Round up the result
+rounded_up = math.ceil(sqrt_result)
+
+# Step  6: Find the sum of the digits of the rounded number
+sum_digits = sum(int(digit) for digit in str(rounded_up))
+
+# Step  7: Calculate the square root of the sum of digits
+final_sqrt = math.sqrt(sum_digits)
+
+print("Final result:", final_sqrt)
+                 
